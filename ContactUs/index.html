@@ -6,34 +6,69 @@
 </head>
 
 <body>
-    <!-- contactus page  -->
-    <h1>ContactUs</h1>
-    <p>If you have any questions, feel free to reach out!</p>
-    <h2>Get in Touch</h2>
-    <lebel for="name">Name:</label>
-    <br>
-    <input type="text" id="name" name="name" required>
-    <br>
-    <lebel for="name">Email:</label>
-    <br>
-    <input type="text" id="email" name="email" required>
-    <br>
-    <lebel for="name">Phone:</label>
-    <br>
-    <input type="text" id="phone" name="phone" required>
-    <br>
-    <lebel for="message">Message:</label>
-    <br>
-    <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-    <br>
-    <button type="submit">Send Massage</button> 
-    <br>
-    <h3>Contact Informatoin</h3>
-    <p><strong>Email:</strong> support@example.com</p>
-    <p><strong>Phone:</strong> (123) 456-7890</p>
-    <p><strong>Address:</strong> 123 Example St, City, Country</p>
-    <p><span>&copy</span> 2024 Example Company. All rights reserved.</p>
-    <h2>This page is end here</h2>
+    <!-- header section -->
+    <header>
+        <h1>ContactUs</h1>
+        <p>If you have any questions, feel free to reach out!</p>
+    </header>
+
+    <!-- Main content area for the contact form -->
+    <main>
+            <!-- contact form -->
+    <section id="contact-form">
+            <h2>Get in Touch</h2>
+
+            <!-- form element for collect user  information -->
+            <form method="post" action="/submit-contact-form">
+        <form method="post" action="/submit-contact-form"></form>
+
+            <!-- input user name field -->
+        <div>
+            <lebel for="name">Name:</label>
+            <br>
+            <input type="text" id="name" name="name" required>
+        </div>
+            <!-- input user email feild -->
+        <div>
+            <lebel for="name">Email:</label>
+            <br>
+            <input type="text" id="email" name="email" required>
+        </div>
+
+        <!-- input for the phone number -->
+        <div>
+            <lebel for="name">Phone:</label>
+            <br>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+
+        <!-- text are for massage -->
+        <div>
+                <lebel for="message">Message:</label>
+                <br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+        </div>
+         
+        <!-- submit button to send the all user  information-->
+        <button type="submit">Send Massage</button> 
+    </form> 
+    </section>
+        
+        <!-- contact information section -->
+        <section id="contact-info">
+        <h3>Contact Informatoin</h3>
+        <p><strong>Email:</strong> support@example.com</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Address:</strong> 123 Example St, City, Country</p>
+        </section>
+
+    </main>
+
+  <!-- footer section with copyright -->
+    <footer>
+        <p><span>&copy</span> 2024 Example Company. All rights reserved.</p>
+        <h2>This page is end here</h2>
+    </footer>
     
 </body>
 </html>
