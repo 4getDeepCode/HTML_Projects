@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us page</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <main>
+
+        <h1>Get In Touch</h1>
+        <form method="post" action="/submit-contact-form">
+            
+            <div>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" name="email" required />
+            </div>
+
+            <div>
+                <label for="message">Message:</label><br />
+                <textarea id="message" name="message" rows="4" required></textarea><br />
+            </div>
+
+            <button type="submit">Send Massage</button>
+
+        </form>
+    </main>
+<img src="https://www.shutterstock.com/image-photo/using-laptop-show-icon-address-600nw-2521386695.jpg" alt="contactus" height="150" width="150">
+
+<footer>
+    <p>&copy; 2024 SASS Platform. All rights reserved.</p>
+</footer>
+</body>
+</html>
