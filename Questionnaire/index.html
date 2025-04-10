@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+</head>
+<body>
+    <!-- header here -->
+     <header>
+        <h1>Website Design Questionnaire</h1>
+        <p>Please fill out this questionnaire to help us better understand your project requirements.</p>
+     </header>
+
+     <!-- main section start -->
+      <main>
+       <!-- form for submit data -->
+         <form action="submit-form" method="post" id="questionnaire-form">
+            
+             <!-- general information  start -->
+            <section>
+                <h2>General Information</h2>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name"  required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="company">Company:</label>
+                    <input type="text" id="company" name="company">
+                </div>
+            </section>
+            <!-- general information  end-->
+
+            <!-- project details start -->
+            <section>
+                <h2>Project Details</h2>
+
+                <!-- selection area -->
+                <div>
+                    <label for="project-type">Project Type</label>
+                   <select name="project-type" id="project-type" required>
+                        <option value="">Select Project Type</option>
+                        <option value="website">Website</option>
+                        <option value="web-application">Web Application</option>
+                        <option value="e-commerce">E-commerce</option>
+                        <option value="other">Other type</option>
+                   </select>
+                </div>
+
+                <div>
+                    <label for="project-discription">Project Discription:</label>
+                    <textarea name="project-discription" id="project-discription" rows="4" required></textarea>
+                </div>
+
+                <div>
+                    <label for="target-audience">Target Audience:</label>
+                    <input type="text" id="target-audience" name="target-audience" required>
+                </div>
+
+            </section>
+              <!-- project details end -->
+   
+              <!-- Design Preferences section -->
+               <section>
+                <div>
+                    <h2>Design Preferences</h2>
+                    <div>
+                        <label for="color-scheme">Color Scheme:</label>
+                        <input type="text" id="color-scheme" name="color-scheme" required>
+                    </div>
+                    <div>
+                        <label for="font-preference">Font Preferences:</label>
+                        <input type="text" id="font-preference" name="font-preference" required>
+                    </div>
+                    <div>
+                        <label for="style-preferences">Style Preferences:</label>
+                        <input type="text" id="style-preferences" name="style-preferences" required>
+                    </div>
+                </div>
+               </section>
+
+               <!-- additional information -->
+                <section>
+                    <h2>Additional Information</h2>
+                    <div>
+                        <label for="budget">Budget:</label>
+                        <input type="number" id="budget" name="budget" min="0" step="1000" required>
+                    </div>
+
+                    <div>
+                        <label for="timeline">Timeline:</label>
+                        <input type="text" id="timeline" name="timeline" placeholder="e.g..,  3month ago" required>
+                    </div>
+
+                    <div>
+                        <label for="additional-notes">Additional Notes:</label>
+                        <textarea name="additional-notes" id="additional-notes" rows="4" required></textarea>
+                    </div>
+                </section>
+                <button type="submit">Submit Questionnaire</button>
+
+         </form>
+
+      </main>
+     <!-- main section end -->
+
+     <!-- footer -->
+      <footer>
+        <p>&copy; 2023 Questionnaire. All rights reserved.</p>
+      </footer>
+
+</body>
+</html>
